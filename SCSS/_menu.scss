@@ -1,0 +1,29 @@
+@use 'colors';
+
+
+.menu__list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.menu__item {
+    flex-grow: 1;
+    text-align: center;
+    background-color: colors.$menubackground;
+}
+
+.menu__link {
+    display: block;
+    text-decoration: none;
+    color: colors.$menutext;
+   
+    padding: 10px;
+    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
+}
+
+.menu__item--active {
+    background-color: colors.$active;
+}

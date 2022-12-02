@@ -1,0 +1,20 @@
+{
+  "name": "total.lokal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": "npx @11ty/eleventy",
+    "script": "npx @11ty/eleventy --serve"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DanielaBiolek/total.lokal.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DanielaBiolek/total.lokal/issues"
+  },
+  "homepage": "https://github.com/DanielaBiolek/total.lokal#readme"
+}

@@ -1,0 +1,9 @@
+@use 'colors';
+
+.footer {
+    background-color: colors.$menubackground;
+    color: colors.$menutext;
+    margin: 0;
+    padding: 10px;
+    text-align: center;
+}

@@ -1,0 +1,55 @@
+.totallokal {
+  font-family: "sigmar one", "Times New Roman", Times, serif;
+  font-size: 50px;
+  text-align: center;
+  padding: 20px;
+  color: #070004;
+  background-color: #ffd6eb;
+  margin: 0;
+}
+
+.menu__list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+}
+
+.menu__item {
+  flex-grow: 1;
+  text-align: center;
+  background-color: #290016;
+}
+
+.menu__link {
+  display: block;
+  text-decoration: none;
+  color: #ffd6eb;
+  padding: 10px;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+.menu__item--active {
+  background-color: #14000B;
+}
+
+.footer {
+  background-color: #290016;
+  color: #ffd6eb;
+  margin: 0;
+  padding: 10px;
+  text-align: center;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*, ::before, ::after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+}/*# sourceMappingURL=style.css.map */

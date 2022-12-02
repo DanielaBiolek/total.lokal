@@ -1,0 +1,11 @@
+@use 'colors';
+
+.totallokal {
+    font-family: 'sigmar one', 'Times New Roman', Times, serif;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+    color: colors.$primary;
+    background-color: colors.$menutext;
+    margin: 0;
+}
