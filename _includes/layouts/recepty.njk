@@ -1,0 +1,13 @@
+---
+layout: layouts/hlavni-sablona.njk
+---
+
+<h2>Recepty</h2>
+
+{% for prispevek in collections.recept %}
+
+    <h2>{{ prispevek.data.title }} </h2>
+    <p> {{ prispevek.data.perex }} </p>
+    <p><a href="{{ prispevek.url }}">Celý článek</a></p>
+
+{% endfor %}

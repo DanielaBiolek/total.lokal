@@ -6,8 +6,13 @@ layout: layouts/hlavni-sablona.njk
 
 <main>
 
-    <p>lala</p>
 
-    {{ content | safe }}
+{% for post in collections.blog %}
+
+    <h2>{{ post.data.title }} </h2>
+    <p> {{ post.data.perex }} </p>
+    <p><a href="{{ prispevek.url }}">Celý článek</a></p>
+
+{% endfor %}
 
 </main>
