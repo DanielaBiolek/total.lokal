@@ -2,12 +2,15 @@
 layout: layouts/hlavni-sablona.njk
 ---
 
-<h2>Recepty</h2>
+<main>
+    <h2>Recepty</h2>
 
-{% for prispevek in collections.recept %}
+    {% for post in collections.recept %}
 
-    <h2>{{ prispevek.data.title }} </h2>
-    <p> {{ prispevek.data.perex }} </p>
-    <p><a href="{{ prispevek.url }}">Celý článek</a></p>
+        <h2>{{ post.data.title }}</h2>
+        <p>{{ post.data.perex }}</p>
+        <p><a href="{{ post.url }}">celý recept</a></p>
 
-{% endfor %}
+    {% endfor %}
+
+</main>
