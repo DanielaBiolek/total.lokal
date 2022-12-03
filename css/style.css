@@ -17,9 +17,18 @@
 }
 
 .menu__item {
-  flex-grow: 1;
   text-align: center;
   background-color: #290016;
+}
+
+.menu__item--left {
+  flex-grow: 1;
+  text-align: end;
+}
+
+.menu__item--right {
+  flex-grow: 1;
+  text-align: start;
 }
 
 .menu__link {
@@ -40,6 +49,23 @@
   margin: 0;
   padding: 10px;
   text-align: center;
+}
+
+.postrecept {
+  border: solid 1px #290016;
+  padding: 20px;
+  text-align: center;
+}
+
+.kontejner {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.obsah {
+  margin: 40px auto;
+  max-width: 80vw;
 }
 
 html {

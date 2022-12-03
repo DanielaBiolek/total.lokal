@@ -1,0 +1,13 @@
+@use 'colors';
+
+.postrecept {
+    border: solid 1px colors.$menubackground;
+    padding: 20px;
+    text-align: center;
+}
+
+.kontejner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
