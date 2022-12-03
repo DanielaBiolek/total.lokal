@@ -6,8 +6,10 @@ layout: layouts/hlavni-sablona.njk
 
     <p><a href="/recepty/index.html">Recepty</a>/{{ title }}</p>
 
-    <h2>{{ title }}</h2>
+    <div class="recept">
+        <h2>{{ title }}</h2>
 
-    {{ content | safe }}
+        {{ content | safe }}
+    </div>
     
 </main>

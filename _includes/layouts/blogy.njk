@@ -5,11 +5,13 @@ layout: layouts/hlavni-sablona.njk
 
 <main class="obsah">
 
+ 
     <div class="kontejner2">
 
         {% for post in collections.blog %}
         
             <div class="postblog">
+                <img src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
                 <h2>{{ post.data.title }} </h2>
                 <p> {{ post.data.perex }} </p>
                 <p><a href="{{ post.url }}">celý článek</a></p>

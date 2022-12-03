@@ -1,0 +1,15 @@
+---
+layout: layouts/hlavni-sablona.njk
+---
+
+<main class="obsah">
+
+    <p><a href="/blog/index.html">Blog</a>/{{ title }}</p>
+
+    <h2>{{ title }}</h2>
+
+    <p class="article__meta">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+
+    {{ content | safe }}
+    
+</main>

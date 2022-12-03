@@ -1,0 +1,15 @@
+@use 'colors';
+
+.recept {
+    border: solid 1px colors.$menubackground;
+    padding: 20px;
+}
+
+.receptgrid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.postup {
+    grid-column: span 2;
+}

@@ -7,11 +7,12 @@ layout: layouts/hlavni-sablona.njk
             <div class="kontejner">
                 {% for post in collections.recept %}
 
-                    <div class="postrecept">
-                        <h2>{{ post.data.title }}</h2>
-                        <div>{{ post.data.foto }}</div>
-                        <p><a href="{{ post.url }}">celý recept</a></p>
-                    </div>
+                    <a href="{{ post.url }}">
+                        <div class="postrecept">
+                            <img src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
+                            <h2>{{ post.data.title }}</h2>
+                        </div>
+                    </a>
 
                 {% endfor %}
             </div>
