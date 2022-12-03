@@ -68,18 +68,42 @@
   max-width: 80vw;
 }
 
-.recept {
-  border: solid 1px #290016;
-  padding: 20px;
+@media screen and (min-width: 400px) {
+  .recept {
+    border: solid 2px #290016;
+    border-radius: 20px;
+    padding: 40px;
+    background-color: #ffd6eb;
+  }
+  .recept__grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  .recept__postup {
+    grid-column: span 2;
+  }
+  .recept__list {
+    line-height: 2;
+    font-weight: bold;
+  }
+  .recept__title {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 30px;
+  }
+  .recept__img {
+    border-radius: 10px;
+  }
+}
+.drobecek {
+  margin: 10px 60px 20px;
+  color: grey;
 }
 
-.receptgrid {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-}
-
-.postup {
-  grid-column: span 2;
+.drobecek__link {
+  color: grey;
 }
 
 html {
