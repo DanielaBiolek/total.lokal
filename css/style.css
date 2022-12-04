@@ -8,6 +8,10 @@
   margin: 0;
 }
 
+.menu {
+  background-color: #290016;
+}
+
 .menu__list {
   list-style: none;
   display: flex;
@@ -21,16 +25,6 @@
   background-color: #290016;
 }
 
-.menu__item--left {
-  flex-grow: 1;
-  text-align: end;
-}
-
-.menu__item--right {
-  flex-grow: 1;
-  text-align: start;
-}
-
 .menu__link {
   display: block;
   text-decoration: none;
@@ -39,8 +33,12 @@
   font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
 
+.menu__item:not(:last-child) {
+  border-right: 1px solid #ffd6eb;
+}
+
 .menu__item--active {
-  background-color: #14000B;
+  background-color: #546a7b;
 }
 
 .footer {
@@ -52,9 +50,19 @@
 }
 
 .postrecept {
-  border: solid 1px #290016;
+  border: solid 2px #546a7b;
+  border-radius: 5px;
   padding: 20px;
   text-align: center;
+  color: #070004;
+}
+
+.postrecept__link {
+  text-decoration: none;
+}
+
+.postrecept__title {
+  margin: 10px 0 0;
 }
 
 .kontejner {
@@ -65,15 +73,15 @@
 
 .obsah {
   margin: 40px auto;
-  max-width: 80vw;
+  max-width: 70vw;
 }
 
 @media screen and (min-width: 400px) {
   .recept {
-    border: solid 2px #290016;
-    border-radius: 20px;
+    border: solid 2px #546a7b;
+    border-radius: 80px;
     padding: 40px;
-    background-color: #ffd6eb;
+    background-color: #FFFEFE;
   }
   .recept__grid {
     display: grid;
@@ -82,19 +90,23 @@
   }
   .recept__postup {
     grid-column: span 2;
+    font-size: 18px;
   }
   .recept__list {
     line-height: 2;
     font-weight: bold;
+    font-size: 18px;
+    margin: 0;
   }
   .recept__title {
     text-align: center;
     margin: 0;
     padding-bottom: 40px;
-    font-size: 30px;
+    font-size: 34px;
   }
   .recept__img {
-    border-radius: 10px;
+    border: 1px solid #070004;
+    border-radius: 5px;
   }
 }
 .drobecek {

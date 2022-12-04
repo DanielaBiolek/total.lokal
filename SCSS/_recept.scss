@@ -8,10 +8,10 @@
 @media screen and (min-width: 400px){
     
     .recept {
-        border: solid 2px colors.$menubackground;
-        border-radius: 20px;
+        border: solid 2px colors.$border;
+        border-radius: 80px;
         padding: 40px;
-        background-color: colors.$menutext;
+        background-color: colors.$background;
     }
 
     .recept__grid {
@@ -22,22 +22,26 @@
 
     .recept__postup {
         grid-column: span 2;
+        font-size: 18px;
     }
 
     .recept__list {
         line-height: 2;
         font-weight: bold;
+        font-size: 18px;
+        margin: 0;
     }
 
     .recept__title {
         text-align: center;
         margin: 0;
         padding-bottom: 40px;
-        font-size: 30px;
+        font-size: 34px;
     }
 
     .recept__img {
-        border-radius: 10px;
+        border: 1px solid colors.$borderimg;
+        border-radius: 5px;
     }
     
 }

@@ -1,6 +1,10 @@
 @use 'colors';
 
 
+.menu {
+    background-color: colors.$menubackground;
+}
+
 .menu__list {
     list-style: none;
     display: flex;
@@ -14,15 +18,6 @@
     background-color: colors.$menubackground;
 }
 
-.menu__item--left {
-    flex-grow: 1;
-    text-align: end;
-}
-
-.menu__item--right {
-    flex-grow: 1;
-    text-align: start;
-}
 
 .menu__link {
     display: block;
@@ -32,6 +27,10 @@
     padding: 10px;
     font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
 }
+
+.menu__item:not(:last-child) {
+    border-right: 1px solid colors.$menutext;
+  }
 
 .menu__item--active {
     background-color: colors.$active;

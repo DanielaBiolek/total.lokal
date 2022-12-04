@@ -1,10 +1,21 @@
 @use 'colors';
 
 .postrecept {
-    border: solid 1px colors.$menubackground;
+    border: solid 2px colors.$border;
+    border-radius: 5px;
     padding: 20px;
     text-align: center;
+    color: colors.$primary;
 }
+
+.postrecept__link {
+    text-decoration: none;
+}
+
+.postrecept__title {
+    margin: 10px 0 0;
+}
+
 
 .kontejner {
     display: grid;
