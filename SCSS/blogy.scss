@@ -1,0 +1,28 @@
+@use 'colors';
+
+.postblog {
+    border: solid 2px colors.$border;
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+    color: colors.$primary;
+    margin: 10px;
+}
+
+.postblog__link {
+    color: colors.$link;
+}
+
+.postrecept__title {
+    margin: 10px 0 0;
+    font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+    .postblog {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        gap: 20px;
+    }
+
+}

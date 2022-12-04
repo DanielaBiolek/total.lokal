@@ -1,47 +1,44 @@
 @use 'colors';
 
+.recept {
+    border: solid 2px colors.$border;
+    border-radius: 40px;
+    padding: 20px;
+}
 
+.recept__list {
+    line-height: 2;
+    font-weight: bold;
+    font-size: 18px;
+    margin: 0;
+}
 
+.recept__title {
+    text-align: center;
+    margin: 0;
+    padding-bottom: 40px;
+    font-size: 34px;
+}
 
+.recept__img {
+    border: 1px solid colors.$borderimg;
+    border-radius: 5px;
+    max-width: 100%;
+}
 
+.recept__link {
+    color: colors.$link;
+}
 
-@media screen and (min-width: 400px){
-    
-    .recept {
-        border: solid 2px colors.$border;
-        border-radius: 80px;
-        padding: 40px;
-        background-color: colors.$background;
-    }
-
+@media screen and (min-width: 900px){
     .recept__grid {
         display: grid;
-        grid-template-columns: 1fr 1fr;
+        grid-template-columns: 2fr 1fr;
         gap: 20px;
     }
 
     .recept__postup {
         grid-column: span 2;
         font-size: 18px;
-    }
-
-    .recept__list {
-        line-height: 2;
-        font-weight: bold;
-        font-size: 18px;
-        margin: 0;
-    }
-
-    .recept__title {
-        text-align: center;
-        margin: 0;
-        padding-bottom: 40px;
-        font-size: 34px;
-    }
-
-    .recept__img {
-        border: 1px solid colors.$borderimg;
-        border-radius: 5px;
-    }
-    
+    }   
 }

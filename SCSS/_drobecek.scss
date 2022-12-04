@@ -1,10 +1,10 @@
 @use 'colors';
 
 .drobecek {
-    margin: 10px 60px 20px;
-    color: grey;
+    margin: 10px;
+    color: colors.$drobecek;
 }
 
 .drobecek__link {
-    color: grey;
+    color: colors.$drobecek;
 }

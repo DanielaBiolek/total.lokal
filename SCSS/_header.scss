@@ -2,10 +2,16 @@
 
 .totallokal {
     font-family: 'sigmar one', 'Times New Roman', Times, serif;
-    font-size: 50px;
+    font-size: 30px;
     text-align: center;
     padding: 20px;
     color: colors.$primary;
     background-color: colors.$menutext;
     margin: 0;
+}
+
+@media screen and (min-width: 440px) {
+    .totallokal {
+        font-size: 50px;
+    }
 }

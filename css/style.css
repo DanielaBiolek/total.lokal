@@ -1,6 +1,6 @@
 .totallokal {
   font-family: "sigmar one", "Times New Roman", Times, serif;
-  font-size: 50px;
+  font-size: 30px;
   text-align: center;
   padding: 20px;
   color: #070004;
@@ -8,14 +8,17 @@
   margin: 0;
 }
 
+@media screen and (min-width: 440px) {
+  .totallokal {
+    font-size: 50px;
+  }
+}
 .menu {
   background-color: #290016;
 }
 
 .menu__list {
   list-style: none;
-  display: flex;
-  justify-content: center;
   margin: 0;
   padding: 0;
 }
@@ -34,13 +37,31 @@
 }
 
 .menu__item:not(:last-child) {
-  border-right: 1px solid #ffd6eb;
+  border-bottom: 1px solid #ffd6eb;
 }
 
 .menu__item--active {
   background-color: #546a7b;
 }
 
+.menu__item:focus {
+  background-color: #79a3a2;
+}
+
+.menu__item:hover {
+  background-color: #79a3a2;
+}
+
+@media screen and (min-width: 440px) {
+  .menu__list {
+    display: flex;
+    justify-content: center;
+  }
+  .menu__item:not(:last-child) {
+    border-right: 1px solid #ffd6eb;
+    border-bottom: 0;
+  }
+}
 .footer {
   background-color: #290016;
   color: #ffd6eb;
@@ -55,6 +76,7 @@
   padding: 20px;
   text-align: center;
   color: #070004;
+  margin: 10px;
 }
 
 .postrecept__link {
@@ -63,61 +85,127 @@
 
 .postrecept__title {
   margin: 10px 0 0;
+  font-size: 18px;
 }
 
-.kontejner {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: 20px;
-}
-
-.obsah {
-  margin: 40px auto;
-  max-width: 70vw;
-}
-
-@media screen and (min-width: 400px) {
-  .recept {
-    border: solid 2px #546a7b;
-    border-radius: 80px;
-    padding: 40px;
-    background-color: #FFFEFE;
+@media screen and (min-width: 440px) {
+  .postrecept {
+    margin: 0;
   }
-  .recept__grid {
+  .postrecept__img {
+    max-width: 100%;
+  }
+  .postrecept__title {
+    font-size: 24px;
+  }
+  .kontejner {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 800px) {
+  .kontejner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
+.obsah {
+  margin: 10px auto;
+  max-width: 90vw;
+}
+
+@media screen and (min-width: 440px) {
+  .obsah {
+    margin: 40px auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .obsah {
+    max-width: 80vw;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .obsah {
+    max-width: 70vw;
+  }
+}
+.recept {
+  border: solid 2px #546a7b;
+  border-radius: 40px;
+  padding: 20px;
+}
+
+.recept__list {
+  line-height: 2;
+  font-weight: bold;
+  font-size: 18px;
+  margin: 0;
+}
+
+.recept__title {
+  text-align: center;
+  margin: 0;
+  padding-bottom: 40px;
+  font-size: 34px;
+}
+
+.recept__img {
+  border: 1px solid #070004;
+  border-radius: 5px;
+  max-width: 100%;
+}
+
+.recept__link {
+  color: #79a3a2;
+}
+
+@media screen and (min-width: 900px) {
+  .recept__grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
     gap: 20px;
   }
   .recept__postup {
     grid-column: span 2;
     font-size: 18px;
   }
-  .recept__list {
-    line-height: 2;
-    font-weight: bold;
-    font-size: 18px;
-    margin: 0;
-  }
-  .recept__title {
-    text-align: center;
-    margin: 0;
-    padding-bottom: 40px;
-    font-size: 34px;
-  }
-  .recept__img {
-    border: 1px solid #070004;
-    border-radius: 5px;
-  }
 }
 .drobecek {
-  margin: 10px 60px 20px;
-  color: grey;
+  margin: 10px;
+  color: #546a7b;
 }
 
 .drobecek__link {
-  color: grey;
+  color: #546a7b;
 }
 
+.postblog {
+  border: solid 2px #546a7b;
+  border-radius: 5px;
+  padding: 20px;
+  text-align: center;
+  color: #070004;
+  margin: 10px;
+}
+
+.postblog__link {
+  color: #79a3a2;
+}
+
+.postrecept__title {
+  margin: 10px 0 0;
+  font-size: 18px;
+}
+
+@media screen and (min-width: 700px) {
+  .postblog {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    gap: 20px;
+  }
+}
 html {
   box-sizing: border-box;
 }

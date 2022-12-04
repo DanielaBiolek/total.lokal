@@ -1,6 +1,29 @@
 @use 'colors';
 
+
 .obsah {
-    margin: 40px auto;
-    max-width: 70vw;
+    margin: 10px auto;
+    max-width: 90vw;
+}
+
+@media screen and (min-width: 440px){
+    .obsah {
+        margin: 40px auto;
+    }
+
+}
+
+@media screen and (min-width: 600px) {
+
+    .obsah {
+        max-width: 80vw;
+    }
+}
+
+
+@media screen and (min-width: 1200px) {
+
+    .obsah {
+        max-width: 70vw;
+    }
 }

@@ -11,10 +11,12 @@ layout: layouts/hlavni-sablona.njk
         {% for post in collections.blog %}
         
             <div class="postblog">
-                <img src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
-                <h2>{{ post.data.title }} </h2>
-                <p> {{ post.data.perex }} </p>
-                <p><a href="{{ post.url }}">celý článek</a></p>
+                <img class="postblog__img" src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
+                <div class="postblog__box">
+                    <h2 class="postblog__title">{{ post.data.title }} </h2>
+                    <p class="postblog__perex"> {{ post.data.perex }} </p>
+                    <p><a class="postblog__link" href="{{ post.url }}">Celý článek</a></p>
+                </div>
             </div>
 
         {% endfor %}
