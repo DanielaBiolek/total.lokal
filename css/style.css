@@ -33,7 +33,7 @@
   text-decoration: none;
   color: #ffd6eb;
   padding: 10px;
-  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
 }
 
 .menu__item:not(:last-child) {
@@ -86,6 +86,8 @@
 .postrecept__title {
   margin: 10px 0 0;
   font-size: 18px;
+  color: #273B3F;
+  font-family: "Bebas Neue";
 }
 
 @media screen and (min-width: 440px) {
@@ -149,6 +151,8 @@
   margin: 0;
   padding-bottom: 40px;
   font-size: 34px;
+  color: #273B3F;
+  font-family: "Bebas Neue";
 }
 
 .recept__img {
@@ -175,10 +179,12 @@
 .drobecek {
   margin: 10px;
   color: #546a7b;
+  font-family: "Babas Neue";
 }
 
 .drobecek__link {
   color: #546a7b;
+  font-family: "Babas Neue";
 }
 
 .postblog {
@@ -194,9 +200,11 @@
   color: #79a3a2;
 }
 
-.postrecept__title {
+.postblog__title {
   margin: 10px 0 0;
   font-size: 18px;
+  color: #273B3F;
+  font-family: "Bebas Neue";
 }
 
 @media screen and (min-width: 700px) {
@@ -205,7 +213,19 @@
     grid-template-columns: 1fr 3fr;
     gap: 20px;
   }
+  .postblog__title {
+    font-size: 24px;
+  }
 }
+.kontakt {
+  font-family: "Bebas Neue";
+}
+
+.kontakt__link {
+  font-family: "Bebas Neue";
+  color: #79a3a2;
+}
+
 html {
   box-sizing: border-box;
 }
@@ -216,4 +236,5 @@ html {
 
 body {
   margin: 0;
+  font-family: "Fira Sans";
 }/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,10 @@
+@use 'colors';
+
+.kontakt {
+    font-family: 'Bebas Neue';
+}
+
+.kontakt__link {
+    font-family: 'Bebas Neue';
+    color: colors.$link;
+}
