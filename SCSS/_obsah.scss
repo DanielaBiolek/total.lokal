@@ -6,24 +6,20 @@
     max-width: 90vw;
 }
 
-@media screen and (min-width: 440px){
+@media screen and (min-width: 550px){
     .obsah {
         margin: 40px auto;
     }
-
 }
 
-@media screen and (min-width: 600px) {
 
+@media screen and (min-width: 930px) {
     .obsah {
-        max-width: 80vw;
-    }
+        max-width: 838px;}
 }
 
 
 @media screen and (min-width: 1200px) {
-
     .obsah {
-        max-width: 70vw;
-    }
+        max-width: 70vw;}
 }

@@ -4,18 +4,16 @@ layout: layouts/hlavni-sablona
 
 <main class="obsah">
 
-    <div class="uvodtext">
-        <p>Vítejte na webové kuchařce "Totál lokál". Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala Lalala vLalala Lalala Lalala</p>
-    </div>
+    {{ content | safe }}
 
 
-     <div class="kontejner">
+    <div class="kontejner">
         {% for post in collections.dohromady | limit(3) %}
 
-            <a href="{{ post.url }}">
-                <div class="postdohromady">
+            <a class="postrecept__link" href="{{ post.url }}">
+                <div class="postrecept">
                     <img src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
-                    <h2>{{ post.data.title }}</h2>
+                    <h2 class="post__title">{{ post.data.title }}</h2>
                 </div>
             </a>
 

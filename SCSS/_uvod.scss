@@ -1,0 +1,7 @@
+@use 'colors';
+
+.post__title {
+    margin: 10px 0 0;
+    color: colors.$title;
+    font-family: 'Bebas Neue';
+}

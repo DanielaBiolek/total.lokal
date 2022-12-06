@@ -1,6 +1,5 @@
 .totallokal {
   font-family: "sigmar one", "Times New Roman", Times, serif;
-  font-size: 30px;
   text-align: center;
   padding: 20px;
   color: #070004;
@@ -8,11 +7,6 @@
   margin: 0;
 }
 
-@media screen and (min-width: 440px) {
-  .totallokal {
-    font-size: 50px;
-  }
-}
 .menu {
   background-color: #290016;
 }
@@ -33,7 +27,7 @@
   text-decoration: none;
   color: #ffd6eb;
   padding: 10px;
-  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu__item:not(:last-child) {
@@ -52,7 +46,7 @@
   background-color: #79a3a2;
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 550px) {
   .menu__list {
     display: flex;
     justify-content: center;
@@ -66,7 +60,7 @@
   background-color: #290016;
   color: #ffd6eb;
   margin: 0;
-  padding: 10px;
+  padding: 5px;
   text-align: center;
 }
 
@@ -77,6 +71,19 @@
   text-align: center;
   color: #070004;
   margin: 10px;
+  min-width: 200px;
+  box-shadow: 1px 1px 2px #ced7de;
+}
+
+.postrecept__img {
+  max-width: 100%;
+}
+
+.post__title--heigh {
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .postrecept__link {
@@ -85,20 +92,26 @@
 
 .postrecept__title {
   margin: 10px 0 0;
-  font-size: 18px;
   color: #273B3F;
   font-family: "Bebas Neue";
 }
 
-@media screen and (min-width: 440px) {
+.postrecept:hover {
+  border: 2px solid #79a3a2;
+  box-shadow: 1px 1px 2px #cedede;
+}
+
+.postrecept:focus {
+  border: 2px solid #79a3a2;
+  box-shadow: 1px 1px 2px #cedede;
+}
+
+@media screen and (min-width: 550px) {
   .postrecept {
     margin: 0;
   }
   .postrecept__img {
     max-width: 100%;
-  }
-  .postrecept__title {
-    font-size: 24px;
   }
   .kontejner {
     display: grid;
@@ -106,7 +119,7 @@
     gap: 20px;
   }
 }
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 930px) {
   .kontejner {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -118,14 +131,14 @@
   max-width: 90vw;
 }
 
-@media screen and (min-width: 440px) {
+@media screen and (min-width: 550px) {
   .obsah {
     margin: 40px auto;
   }
 }
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 930px) {
   .obsah {
-    max-width: 80vw;
+    max-width: 838px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -142,7 +155,6 @@
 .recept__list {
   line-height: 2;
   font-weight: bold;
-  font-size: 18px;
   margin: 0;
 }
 
@@ -150,7 +162,6 @@
   text-align: center;
   margin: 0;
   padding-bottom: 40px;
-  font-size: 34px;
   color: #273B3F;
   font-family: "Bebas Neue";
 }
@@ -165,26 +176,34 @@
   color: #79a3a2;
 }
 
-@media screen and (min-width: 900px) {
+@media screen and (min-width: 550px) {
+  .recept__inner-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 720px) {
+  .recept__inner-grid {
+    display: block;
+  }
   .recept__grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
   }
   .recept__postup {
     grid-column: span 2;
-    font-size: 18px;
   }
 }
 .drobecek {
   margin: 10px;
   color: #546a7b;
-  font-family: "Babas Neue";
+  font-family: "Bebas Neue";
 }
 
 .drobecek__link {
   color: #546a7b;
-  font-family: "Babas Neue";
+  font-family: "Bebas Neue";
 }
 
 .postblog {
@@ -194,27 +213,38 @@
   text-align: center;
   color: #070004;
   margin: 10px;
+  box-shadow: 1px 1px 2px #ced7de;
 }
 
-.postblog__link {
-  color: #79a3a2;
+.postblog__img {
+  max-width: 100%;
 }
 
 .postblog__title {
   margin: 10px 0 0;
-  font-size: 18px;
   color: #273B3F;
   font-family: "Bebas Neue";
 }
 
-@media screen and (min-width: 700px) {
+.postblog__link {
+  text-decoration: none;
+}
+
+.postblog:hover {
+  border: 2px solid #79a3a2;
+  box-shadow: 1px 1px 2px #cedede;
+}
+
+.postblog:focus {
+  border: 2px solid #79a3a2;
+  box-shadow: 1px 1px 2px #cedede;
+}
+
+@media screen and (min-width: 690px) {
   .postblog {
     display: grid;
     grid-template-columns: 1fr 3fr;
     gap: 20px;
-  }
-  .postblog__title {
-    font-size: 24px;
   }
 }
 .kontakt {
@@ -226,6 +256,48 @@
   color: #79a3a2;
 }
 
+.text__size {
+  font-size: 18px;
+}
+
+.menu__size {
+  font-size: 16px;
+}
+
+.perex__size {
+  font-size: 16px;
+}
+
+.drobecek__size {
+  font-size: 18px;
+}
+
+.totallokal__size--small {
+  font-size: 30px;
+}
+
+.post__title {
+  font-size: 24px;
+}
+
+.nadpis__size--small {
+  font-size: 34px;
+}
+
+@media screen and (min-width: 550px) {
+  .totallokal__size--big {
+    font-size: 50px;
+  }
+  .nadpis__size--big {
+    font-size: 34px;
+  }
+}
+.post__title {
+  margin: 10px 0 0;
+  color: #273B3F;
+  font-family: "Bebas Neue";
+}
+
 html {
   box-sizing: border-box;
 }
@@ -234,7 +306,11 @@ html {
   box-sizing: inherit;
 }
 
-body {
+.body {
   margin: 0;
   font-family: "Fira Sans";
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }/*# sourceMappingURL=style.css.map */

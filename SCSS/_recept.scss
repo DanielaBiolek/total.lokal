@@ -9,7 +9,6 @@
 .recept__list {
     line-height: 2;
     font-weight: bold;
-    font-size: 18px;
     margin: 0;
 }
 
@@ -17,7 +16,6 @@
     text-align: center;
     margin: 0;
     padding-bottom: 40px;
-    font-size: 34px;
     color: colors.$title;
     font-family: 'Bebas Neue';
 }
@@ -32,15 +30,25 @@
     color: colors.$link;
 }
 
-@media screen and (min-width: 900px){
-    .recept__grid {
-        display: grid;
-        grid-template-columns: 2fr 1fr;
+@media screen and (min-width: 550px){
+    .recept__inner-grid {
+       display: grid;
+        grid-template-columns: 1fr 1fr;
         gap: 20px;
+    } 
+}
+
+@media screen and (min-width: 720px) {
+    .recept__inner-grid {
+        display: block;
     }
 
+    .recept__grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;}
+    
     .recept__postup {
-        grid-column: span 2;
-        font-size: 18px;
-    }   
+            grid-column: span 2;
+        }  
+
 }

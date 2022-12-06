@@ -1,0 +1,42 @@
+.text__size {
+    font-size: 18px;
+}
+
+.menu__size {
+    font-size: 16px;
+}
+
+.perex__size {
+    font-size: 16px;
+}
+
+.drobecek__size {
+    font-size: 18px;
+}
+
+.totallokal__size--small {
+    font-size: 30px;
+}
+
+.post__title {
+    font-size: 24px;
+}
+
+.nadpis__size--small {
+    font-size: 34px;
+}
+
+
+
+@media screen and (min-width: 550px) {
+
+    .totallokal__size--big {
+        font-size: 50px;
+    }
+    
+    
+    .nadpis__size--big {
+        font-size: 34px;
+    }
+    
+}

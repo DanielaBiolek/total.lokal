@@ -8,12 +8,18 @@
 @use 'blog';
 @use 'blogy';
 @use 'onas';
+@use 'font-size';
+@use 'uvod';
 
 
 html {box-sizing: border-box;}
 *, ::before, ::after {box-sizing: inherit;}
 
-body {
+.body {
     margin: 0;
     font-family: 'Fira Sans';
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
