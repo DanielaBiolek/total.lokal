@@ -65,53 +65,13 @@
 }
 
 .postrecept {
-  border: solid 2px #546a7b;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  color: #070004;
   margin: 10px;
   min-width: 200px;
-  box-shadow: 1px 1px 2px #ced7de;
-}
-
-.postrecept__img {
-  max-width: 100%;
-}
-
-.post__title--heigh {
-  min-height: 70px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.postrecept__link {
-  text-decoration: none;
-}
-
-.postrecept__title {
-  margin: 10px 0 0;
-  color: #273B3F;
-  font-family: "Bebas Neue";
-}
-
-.postrecept:hover {
-  border: 2px solid #79a3a2;
-  box-shadow: 1px 1px 2px #cedede;
-}
-
-.postrecept:focus {
-  border: 2px solid #79a3a2;
-  box-shadow: 1px 1px 2px #cedede;
 }
 
 @media screen and (min-width: 550px) {
   .postrecept {
     margin: 0;
-  }
-  .postrecept__img {
-    max-width: 100%;
   }
   .kontejner {
     display: grid;
@@ -207,37 +167,7 @@
 }
 
 .postblog {
-  border: solid 2px #546a7b;
-  border-radius: 5px;
-  padding: 20px;
-  text-align: center;
-  color: #070004;
   margin: 10px;
-  box-shadow: 1px 1px 2px #ced7de;
-}
-
-.postblog__img {
-  max-width: 100%;
-}
-
-.postblog__title {
-  margin: 10px 0 0;
-  color: #273B3F;
-  font-family: "Bebas Neue";
-}
-
-.postblog__link {
-  text-decoration: none;
-}
-
-.postblog:hover {
-  border: 2px solid #79a3a2;
-  box-shadow: 1px 1px 2px #cedede;
-}
-
-.postblog:focus {
-  border: 2px solid #79a3a2;
-  box-shadow: 1px 1px 2px #cedede;
 }
 
 @media screen and (min-width: 690px) {
