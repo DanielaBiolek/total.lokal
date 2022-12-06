@@ -10,10 +10,12 @@ layout: layouts/hlavni-sablona
     <div class="kontejner">
         {% for post in collections.dohromady | limit(3) %}
 
-            <a class="postrecept__link" href="{{ post.url }}">
-                <div class="postrecept">
+            <a class="post__link" href="{{ post.url }}">
+                <div class="post">
                     <img src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
-                    <h2 class="post__title">{{ post.data.title }}</h2>
+                    <div class="post__title--height">   
+                        <h2 class="post__title">{{ post.data.title }}</h2>
+                    </div>
                 </div>
             </a>
 

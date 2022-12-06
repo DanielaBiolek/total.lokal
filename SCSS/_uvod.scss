@@ -1,7 +1,11 @@
 @use 'colors';
 
-.post__title {
-    margin: 10px 0 0;
-    color: colors.$title;
-    font-family: 'Bebas Neue';
+.uvodtext {
+    max-width: 60vw;
+    text-align: center;
+    margin: 50px auto;
+    border: 2px solid colors.$border;
+    border-radius: 10px;
+    padding: 10px 20px;
+    background-color: colors.$bordershadow;
 }
