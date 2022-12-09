@@ -2,12 +2,10 @@
 
 .postrecept {
     margin: 10px;
-    min-width: 200px;
 }
 
 
 @media screen and (min-width: 550px){ 
-
 
     .postrecept {
         margin: 0;
@@ -19,7 +17,6 @@
         gap: 20px;
     }
 }
-
 
 @media screen and (min-width: 930px){ 
 

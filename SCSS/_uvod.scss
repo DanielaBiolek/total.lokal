@@ -1,22 +1,78 @@
 @use 'colors';
 
 .uvod {
-    max-width: 50vw;
+    max-width: 90vw;
     text-align: center;
-    margin: 50px auto;
+    margin: 50px auto 30px;
+    border: 6px double colors.$link;
+    border-radius: 50%;
+    padding: 40px;
+}
+
+@media screen and (min-width: 550px) {
+    
+    .uvod {
+        max-width: 80vw;
+    }
+}
+
+@media screen and (min-width: 750px) {
+    
+    .uvod {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    
+    .uvod {
+        max-width: 50vw;
+    }
 }
 
 
-.uvod::before, .uvod::after {
+
+/*.uvod::before, .uvod::after {
     content: '';
     display: block;
-    height: 2px;
-    width: 200px;
+    height: 3px;
+    max-width: 180px;
     background-color: colors.$menutext;
     margin: 0 auto;
-}
+}*/
 
 .uvod__nadpis {
     color: colors.$title;
     margin: 10px;
+}
+
+
+.uvod__link {
+    color: colors.$link;
+}
+
+.postdohromady {
+    margin: 10px;
+}
+
+@media screen and (min-width: 550px){ 
+
+    .postdohromady {
+        margin: 0;
+    }
+
+    .kontejner {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+@media screen and (min-width: 930px){ 
+
+    .kontejner {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 20px;
+    }
 }
