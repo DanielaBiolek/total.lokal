@@ -4,10 +4,15 @@
     max-width: 90vw;
     text-align: center;
     margin: 50px auto 30px;
-    border: 6px double colors.$link;
-    border-radius: 50%;
-    padding: 40px;
+   /* border: 6px double colors.$link;
+    border-radius: 20px;
+    padding: 20px;
+    background-color: colors.$primary;*/
 }
+/*
+.uvod__text {
+    color: colors.$link;
+}*/
 
 @media screen and (min-width: 550px) {
     
@@ -30,16 +35,18 @@
     }
 }
 
+.uvod__text {
+    font-size: 24px;
+}
 
-
-/*.uvod::before, .uvod::after {
+.uvod::before, .uvod::after {
     content: '';
     display: block;
     height: 3px;
     max-width: 180px;
     background-color: colors.$menutext;
     margin: 0 auto;
-}*/
+}
 
 .uvod__nadpis {
     color: colors.$title;
