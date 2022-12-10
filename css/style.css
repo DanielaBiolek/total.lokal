@@ -232,8 +232,8 @@
   }
 }
 .uvod {
-  max-width: 90vw;
-  text-align: center;
+  max-width: 80vw;
+  text-align: justify;
   margin: 50px auto 30px;
   /* border: 6px double colors.$link;
    border-radius: 20px;
@@ -247,21 +247,21 @@
 }*/
 @media screen and (min-width: 550px) {
   .uvod {
-    max-width: 80vw;
+    max-width: 70vw;
   }
 }
 @media screen and (min-width: 750px) {
   .uvod {
-    max-width: 60vw;
+    max-width: 50vw;
   }
 }
 @media screen and (min-width: 1200px) {
   .uvod {
-    max-width: 50vw;
+    max-width: 40vw;
   }
 }
 .uvod__text {
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .uvod::before, .uvod::after {
