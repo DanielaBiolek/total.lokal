@@ -11,6 +11,8 @@
 @use 'font-size';
 @use 'uvod';
 @use 'post-uni';
+@use 'font';
+@use 'kontejner';
 
 
 html {box-sizing: border-box;}
@@ -18,7 +20,6 @@ html {box-sizing: border-box;}
 
 .body {
     margin: 0;
-    font-family: 'Fira Sans';
     min-height: 100vh;
     display: flex;
     flex-direction: column;

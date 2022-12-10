@@ -2,14 +2,15 @@
 layout: layouts/hlavni-sablona.njk
 ---
 
-<p class="drobecek drobecek__size"><a class="drobecek__link drobecek__size" href="/blog/index.html">Blog</a>/{{ title }}</p>
+<p class="drobecek drobecek--size"><a class="drobecek__link drobecek--size" href="/blog/index.html">Blog</a>/{{ title }}</p>
 
 <main class="obsah">
+    <div class="blog">
 
-    <h2 class="nadpis__size--small nadpis__size--big">{{ title }}</h2>
+        <h2 class="blog__title blog__title--size-small blog__title--size-big">{{ title }}</h2>
 
-    <p class="article__meta text__size">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
+        <p class="blog__meta text--size">Publikováno {{ page.date.toLocaleString('cs-CZ') }}</p>
 
-    {{ content | safe }}
-    
+        {{ content | safe }}
+    </div>
 </main>

@@ -1,17 +1,17 @@
 @use 'colors';
 
 .recept {
-    border: solid 2px colors.$border;
+    border: solid 2px colors.$border-post;
     border-radius: 40px;
     padding: 40px;
 }
 
 .recept__list {
-    line-height: 2;
+    display: inline-block;
+    line-height: 1.8;
     font-weight: bold;
-    margin: 0;
+    margin: 30px 60px;
     padding: 0;
-    list-style-position: inside;
 }
 
 .recept__title {
@@ -19,11 +19,10 @@
     margin: 0;
     padding-bottom: 40px;
     color: colors.$title;
-    font-family: 'Bebas Neue';
 }
 
 .recept__img {
-    border: 1px solid colors.$borderimg;
+    border: 1px solid colors.$border-img;
     display: block;
     border-radius: 5px;
     max-width: 100%;
@@ -35,29 +34,40 @@
 }
 
 
-@media screen and (min-width: 550px){
+/*@media screen and (min-width: 550px){
     .recept__inner-grid {
-       display: grid;
+        display: grid;
         grid-template-columns: 1fr 1fr;
+        justify-content: center;
         gap: 20px;
-        justify-items: center;
     } 
 
 
-}
+}*/
 
 @media screen and (min-width: 880px) {
-    .recept__inner-grid {
+   /* .recept__inner-grid {
         display: block;
-    }
+    }*/
 
     .recept__grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
-        gap: 20px;
+        gap: 40px;
     }
-       
     
+    .recept__list {
+        margin: 0;
+    }
+
+    .recept__firstline {
+        margin-top: 0;
+    }
+    
+    .recept__lastline {
+        margin-bottom: 0;
+    }
+
     .recept__postup {
             grid-column: span 2;
         }  

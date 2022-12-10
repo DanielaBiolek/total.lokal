@@ -1,5 +1,4 @@
 .totallokal {
-  font-family: "sigmar one", "Times New Roman", Times, serif;
   text-align: center;
   padding: 20px;
   color: #070004;
@@ -27,7 +26,6 @@
   text-decoration: none;
   color: #ffd6eb;
   padding: 10px;
-  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
 }
 
 .menu__item:not(:last-child) {
@@ -72,18 +70,6 @@
   .postrecept {
     margin: 0;
   }
-  .kontejner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 930px) {
-  .kontejner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-  }
 }
 .obsah {
   margin: 20px auto;
@@ -105,6 +91,11 @@
     max-width: 70vw;
   }
 }
+@media screen and (min-width: 2000px) {
+  .obsah {
+    max-width: 1400px;
+  }
+}
 .recept {
   border: solid 2px #546a7b;
   border-radius: 40px;
@@ -112,11 +103,11 @@
 }
 
 .recept__list {
-  line-height: 2;
+  display: inline-block;
+  line-height: 1.8;
   font-weight: bold;
-  margin: 0;
+  margin: 30px 60px;
   padding: 0;
-  list-style-position: inside;
 }
 
 .recept__title {
@@ -124,7 +115,6 @@
   margin: 0;
   padding-bottom: 40px;
   color: #273B3F;
-  font-family: "Bebas Neue";
 }
 
 .recept__img {
@@ -139,22 +129,33 @@
   color: #79a3a2;
 }
 
-@media screen and (min-width: 550px) {
-  .recept__inner-grid {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-    justify-items: center;
-  }
-}
+/*@media screen and (min-width: 550px){
+    .recept__inner-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-content: center;
+        gap: 20px;
+    } 
+
+
+}*/
 @media screen and (min-width: 880px) {
-  .recept__inner-grid {
-    display: block;
-  }
+  /* .recept__inner-grid {
+       display: block;
+   }*/
   .recept__grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 20px;
+    gap: 40px;
+  }
+  .recept__list {
+    margin: 0;
+  }
+  .recept__firstline {
+    margin-top: 0;
+  }
+  .recept__lastline {
+    margin-bottom: 0;
   }
   .recept__postup {
     grid-column: span 2;
@@ -163,12 +164,10 @@
 .drobecek {
   margin: 10px;
   color: #546a7b;
-  font-family: "Bebas Neue";
 }
 
 .drobecek__link {
   color: #546a7b;
-  font-family: "Bebas Neue";
 }
 
 .postblog {
@@ -182,100 +181,68 @@
     gap: 20px;
   }
 }
-.kontakt {
-  font-family: "Bebas Neue";
-}
-
 .kontakt__link {
-  font-family: "Bebas Neue";
   color: #79a3a2;
 }
 
-.text__size {
+.text--size {
   font-size: 18px;
 }
 
-.menu__size {
+.menu__item--size {
   font-size: 16px;
 }
 
-.perex__size {
+.post__perex--size {
   font-size: 16px;
 }
 
-.drobecek__size {
+.drobecek--size {
   font-size: 18px;
 }
 
-.totallokal__size--small {
+.totallokal--size-small {
   font-size: 30px;
 }
 
-.post__title {
+.post__title--size {
   font-size: 24px;
 }
 
-.uvod__nadpis {
+.uvod__nadpis--size {
   font-size: 20px;
 }
 
-.nadpis__size--small {
+.recept__title--size-small,
+.blog__title--size-small {
   font-size: 34px;
 }
 
+.uvod__text--size {
+  font-size: 20px;
+}
+
 @media screen and (min-width: 550px) {
-  .totallokal__size--big {
+  .totallokal--size-big {
     font-size: 50px;
   }
-  .nadpis__size--big {
+  .recept__title--size-big,
+.blog__title--size-big {
     font-size: 34px;
   }
 }
 .uvod {
-  max-width: 80vw;
-  text-align: justify;
-  margin: 50px auto 30px;
-  /* border: 6px double colors.$link;
-   border-radius: 20px;
-   padding: 20px;
-   background-color: colors.$primary;*/
-}
-
-/*
-.uvod__text {
-    color: colors.$link;
-}*/
-@media screen and (min-width: 550px) {
-  .uvod {
-    max-width: 70vw;
-  }
-}
-@media screen and (min-width: 750px) {
-  .uvod {
-    max-width: 50vw;
-  }
-}
-@media screen and (min-width: 1200px) {
-  .uvod {
-    max-width: 40vw;
-  }
-}
-.uvod__text {
-  font-size: 22px;
-}
-
-.uvod::before, .uvod::after {
-  content: "";
-  display: block;
-  height: 3px;
-  max-width: 180px;
-  background-color: #ffd6eb;
-  margin: 0 auto;
+  margin: 30px auto;
+  text-align: center;
 }
 
 .uvod__nadpis {
   color: #273B3F;
   margin: 10px;
+}
+
+.uvod__text {
+  margin: 20px;
 }
 
 .uvod__link {
@@ -290,17 +257,12 @@
   .postdohromady {
     margin: 0;
   }
-  .kontejner {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 20px;
-  }
-}
-@media screen and (min-width: 930px) {
-  .kontejner {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
+  .uvod {
+    margin: 40px auto;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 .post {
@@ -314,13 +276,14 @@
 }
 
 .post__img {
+  display: inline-block;
   max-width: 100%;
+  margin: 0 auto;
 }
 
 .post__title {
   margin: 10px 0 0;
   color: #273B3F;
-  font-family: "Bebas Neue";
 }
 
 .post__link {
@@ -358,15 +321,54 @@
   position: absolute;
   left: 0;
   top: 0;
-  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
   padding: 7px;
-  background-color: #ffd6eb;
   border-bottom-right-radius: 10px;
   color: #070004;
   font-size: 14px;
   font-weight: 600;
 }
 
+.post__category--recept {
+  background-color: #ffd6eb;
+}
+
+.post__category--blog {
+  background-color: #79a3a2;
+}
+
+.body,
+.post__category,
+.menu__link {
+  font-family: "Fira Sans", Arial, Helvetica, sans-serif;
+}
+
+.recept__title,
+.post__title,
+.kontakt,
+.kontakt__link,
+.drobecek,
+.drobecek__link {
+  font-family: "Bebas Neue", Arial, Helvetica, sans-serif;
+}
+
+.totallokal {
+  font-family: "sigmar one", "Times New Roman", Times, serif;
+}
+
+@media screen and (min-width: 550px) {
+  .kontejner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .kontejner {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+}
 html {
   box-sizing: border-box;
 }
@@ -377,7 +379,6 @@ html {
 
 .body {
   margin: 0;
-  font-family: "Fira Sans";
   min-height: 100vh;
   display: flex;
   flex-direction: column;

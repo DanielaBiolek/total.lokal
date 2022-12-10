@@ -4,7 +4,6 @@ layout: layouts/hlavni-sablona
 
 <main class="obsah">
 
-
     {{ content | safe }}
 
     <div class="kontejner">
@@ -13,7 +12,7 @@ layout: layouts/hlavni-sablona
             <a class="post__link" href="{{ post.url }}">
                 <div class="post postdohromady">
                     <div class="post__position-box">
-                        <p class="post__category">{{ post.data.category }}</p>
+                        <p class="post__category {{ 'post__category--blog' if post.data.category === 'blog' }} {{ 'post__category--recept' if post.data.category === 'recept' }}">{{ post.data.category }}</p>
                         <img class="post__img" src="/images/{{ post.data.foto }}" alt="{{ post.data.alt }}">
                     </div>
                     <div class="post__title--height">   
@@ -24,5 +23,9 @@ layout: layouts/hlavni-sablona
 
         {% endfor %}
     </div>
+
+
+    
+
 
 </main>

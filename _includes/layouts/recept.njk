@@ -2,12 +2,12 @@
 layout: layouts/hlavni-sablona.njk
 ---
 
-<p class="drobecek drobecek__size"><a class="drobecek__link drobecek__size--small drobecek__size--big" href="/recepty/index.html">Recepty</a>/{{ title }}</p>
+<p class="drobecek drobecek--size"><a class="drobecek__link drobecek--size" href="/recepty/index.html">Recepty</a>/{{ title }}</p>
 
 <main class="obsah">
         
     <div class="recept">
-        <h2 class="recept__title nadpis__size--small nadpis__size--big">{{ title }}</h2>
+        <h2 class="recept__title recept__title--size-small recept__title--size-big">{{ title }}</h2>
 
         {{ content | safe }}
 

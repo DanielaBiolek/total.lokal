@@ -1,23 +1,24 @@
 @use 'colors';
 
 .post {
-    border: solid 2px colors.$border;
+    border: solid 2px colors.$border-post;
     border-radius: 5px;
     padding: 20px;
     text-align: center;
     color: colors.$primary;
-    box-shadow: 1px 1px 2px colors.$bordershadow;
+    box-shadow: 1px 1px 2px colors.$border-shadow;
     transition: transform 0.08s;
 }
 
 .post__img {
+    display: inline-block;
     max-width: 100%;
+    margin: 0 auto;
 }
 
 .post__title {
     margin: 10px 0 0;
     color: colors.$title;
-    font-family: 'Bebas Neue';
 }
 
 .post__link {
@@ -26,13 +27,13 @@
 
 .post:hover, .post:focus  {
     border: 2px solid colors.$focus-hover;
-    box-shadow: 1.5px 1.5px 2.5px colors.$bordershadow;
+    box-shadow: 1.5px 1.5px 2.5px colors.$border-shadow;
     transform: translate(-0.5px, -0.5px);
 }
 
 .post:active {
     border: 2px solid colors.$focus-hover;
-    box-shadow: 1px 1px 2px colors.$bordershadow;
+    box-shadow: 1px 1px 2px colors.$border-shadow;
     transform: translate(0, 0);
 }
 
@@ -55,13 +56,19 @@
     position: absolute;
     left: 0;
     top: 0;
-    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
     padding: 7px;
-    background-color: colors.$menutext;
     border-bottom-right-radius: 10px;
     color: colors.$primary;
     font-size: 14px;
     font-weight: 600;
+}
+
+.post__category--recept {
+    background-color: colors.$recept-tag;
+}
+
+.post__category--blog {
+    background-color: colors.$blog-tag;
 }
 
 

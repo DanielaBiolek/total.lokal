@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="38.593353mm"
+   height="9.8492203mm"
+   viewBox="0 0 38.593353 9.8492203"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
+   sodipodi:docname="dekorace1.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.93895903"
+     inkscape:cx="-288.61749"
+     inkscape:cy="140.04871"
+     inkscape:window-width="1530"
+     inkscape:window-height="836"
+     inkscape:window-x="0"
+     inkscape:window-y="0"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="Vrstva 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-113.88906,-24.782652)">
+    <g
+       id="g3090">
+      <circle
+         style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.499999"
+         id="path1877"
+         cx="147.5578"
+         cy="29.707262"
+         r="4.9246101" />
+      <circle
+         style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.369914"
+         id="path1877-3"
+         cx="134.79242"
+         cy="29.707262"
+         r="3.6433749" />
+      <circle
+         style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.254302"
+         id="path1877-6"
+         cx="124.44695"
+         cy="29.707262"
+         r="2.5046828" />
+      <circle
+         style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.195742"
+         id="path1877-7"
+         cx="115.81696"
+         cy="29.707262"
+         r="1.9279068" />
+    </g>
+  </g>
+</svg>

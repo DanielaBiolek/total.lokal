@@ -10,15 +10,17 @@ layout: layouts/hlavni-sablona.njk
 
         {% for post in collections.blog %}
         
+           
             <a class="post__link" href="{{ post.url }}">
-                <div class="post postblog">
+                 <div class="post postblog">
                     <img class="post__img" src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
                     <div>
-                        <h2 class="post__title">{{ post.data.title }} </h2>
-                        <p class="post__perex perex__size"> {{ post.data.perex }} </p>
+                        <h2 class="post__title post__title--size">{{ post.data.title }} </h2>
+                        <p class="post__perex post__perex--size"> {{ post.data.perex }} </p>
                     </div>
-                </div>
+                 </div>
             </a>
+           
         {% endfor %}
     <div>
 

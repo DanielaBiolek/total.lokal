@@ -1,7 +1,7 @@
 @use 'colors';
 
 .menu {
-    background-color: colors.$menubackground;
+    background-color: colors.$menu-background;
 }
 
 .menu__list {
@@ -12,19 +12,18 @@
 
 .menu__item {
     text-align: center;
-    background-color: colors.$menubackground;
+    background-color: colors.$menu-background;
 }
 
 .menu__link {
     display: block;
     text-decoration: none;
-    color: colors.$menutext;
+    color: colors.$menu-text;
     padding: 10px;
-    font-family: 'Fira Sans', Arial, Helvetica, sans-serif;
 }
 
 .menu__item:not(:last-child) {
-    border-bottom: 1px solid colors.$menutext;
+    border-bottom: 1px solid colors.$decoration;
 }
 
 .menu__item--active {
@@ -47,7 +46,7 @@
     }
 
     .menu__item:not(:last-child) {
-        border-right: 1px solid colors.$menutext;
+        border-right: 1px solid colors.$decoration;
         border-bottom: 0;
     }
 }

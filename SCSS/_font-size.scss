@@ -1,45 +1,49 @@
-.text__size {
+.text--size {
     font-size: 18px;
 }
 
-.menu__size {
+.menu__item--size {
     font-size: 16px;
 }
 
-.perex__size {
+.post__perex--size {
     font-size: 16px;
 }
 
-.drobecek__size {
+.drobecek--size {
     font-size: 18px;
 }
 
-.totallokal__size--small {
+.totallokal--size-small {
     font-size: 30px;
 }
 
-.post__title {
+.post__title--size {
     font-size: 24px;
 }
 
-.uvod__nadpis {
+.uvod__nadpis--size {
     font-size: 20px;
 }
 
-.nadpis__size--small {
+.recept__title--size-small,
+.blog__title--size-small {
     font-size: 34px;
 }
 
-
+.uvod__text--size {
+    font-size: 20px;
+}
 
 @media screen and (min-width: 550px) {
 
-    .totallokal__size--big {
+    .totallokal--size-big {
         font-size: 50px;
     }
     
     
-    .nadpis__size--big {
+    .recept__title--size-big,
+    .blog__title--size-big {
         font-size: 34px;
     }
     

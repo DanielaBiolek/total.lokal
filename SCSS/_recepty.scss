@@ -10,19 +10,4 @@
     .postrecept {
         margin: 0;
     }
-
-    .kontejner {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 20px;
-    }
-}
-
-@media screen and (min-width: 930px){ 
-
-    .kontejner {
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 20px;
-    }
 }
