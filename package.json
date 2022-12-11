@@ -16,10 +16,6 @@
   "bugs": {
     "url": "https://github.com/DanielaBiolek/total.lokal/issues"
   },
-  "homepage": "https://github.com/DanielaBiolek/total.lokal#readme",
-  "dependencies": {
-    "@glidejs/glide": "^3.6.0"
-  },
   "devDependencies": {
     "@11ty/eleventy": "^1.0.2"
   }
