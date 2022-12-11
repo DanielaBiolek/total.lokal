@@ -10,7 +10,7 @@
     display: inline-block;
     line-height: 1.8;
     font-weight: bold;
-    margin: 30px 60px;
+    margin: 20px 30px;
     padding: 0;
 }
 
@@ -33,22 +33,22 @@
     color: colors.$link;
 }
 
-
-/*@media screen and (min-width: 550px){
-    .recept__inner-grid {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        justify-content: center;
-        gap: 20px;
-    } 
+.recept__mnozstvi {
+    text-decoration: underline;
+    margin: 30px 30px 0;
+}
 
 
-}*/
+@media screen and (min-width: 550px) {
+    .recept__mnozstvi {
+        margin: 30px 80px 0;
+    }
+    .recept__list {
+        margin: 20px 80px;
+    }
+}
 
-@media screen and (min-width: 880px) {
-   /* .recept__inner-grid {
-        display: block;
-    }*/
+@media screen and (min-width: 930px) {
 
     .recept__grid {
         display: grid;
@@ -58,6 +58,10 @@
     
     .recept__list {
         margin: 0;
+    }
+
+    .recept__mnozstvi {
+        margin: 0 0 10px;
     }
 
     .recept__firstline {
