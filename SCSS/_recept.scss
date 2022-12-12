@@ -3,7 +3,7 @@
 .recept {
     border: solid 2px colors.$border-post;
     border-radius: 20px; 
-    padding: 40px;
+    padding: 20px;
 }
 
 .recept__list {
@@ -46,24 +46,35 @@
     background-color: colors.$decoration;
 }
 
-
-@media screen and (min-width: 550px) {
-    .recept__mnozstvi {
-        margin: 30px 80px 0;
-    }
-    .recept__list {
-        margin: 20px 80px;
-    }
+.note__list {
+    margin: 0 20px;
+    padding: 0;
 }
 
-@media screen and (min-width: 930px) {
+    .skryto--vmobilu {
+        display: none;
+    }
+
+
+@media screen and (min-width: 550px) {
+    .skryto--vmobilu {
+        display: block;
+    }
+
+    .skryto--vtabletu {
+        display: none;
+    }
 
     .recept__grid {
         display: grid;
         grid-template-columns: 2fr 1fr;
         gap: 40px;
     }
-    
+
+    .recept__postup {
+        margin-top: 20px;
+    }
+
     .recept__list {
         margin: 0;
     }
@@ -80,8 +91,8 @@
         margin-bottom: 0;
     }
 
-    .recept__postup {
-            grid-column: span 2;
-        }  
-
+    .note__list {
+        margin: 0;
+        padding: 0;
+    }
 }
