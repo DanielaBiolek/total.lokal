@@ -51,9 +51,9 @@
     padding: 0;
 }
 
-    .skryto--vmobilu {
-        display: none;
-    }
+.skryto--vmobilu {
+     display: none;
+}
 
 
 @media screen and (min-width: 550px) {
@@ -81,14 +81,6 @@
 
     .recept__mnozstvi {
         margin: 0 0 10px;
-    }
-
-    .recept__firstline {
-        margin-top: 0;
-    }
-    
-    .recept__lastline {
-        margin-bottom: 0;
     }
 
     .note__list {
