@@ -7,7 +7,7 @@ layout: layouts/hlavni-sablona
     {{ content | safe }}
 
     <div class="kontejner">
-        {% for post in collections.dohromady | limit(3) %}
+        {% for post in collections.dohromady | reverse | limit(3) %}
 
             <a class="post__link" href="{{ post.url }}">
                 <div class="post postdohromady">

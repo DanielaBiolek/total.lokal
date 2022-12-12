@@ -8,7 +8,7 @@ layout: layouts/hlavni-sablona.njk
  
     <div class="kontejner2">
 
-        {% for post in collections.blog %}
+        {% for post in collections.blog | reverse %}
         
            
             <a class="post__link" href="{{ post.url }}">

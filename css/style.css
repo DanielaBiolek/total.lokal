@@ -98,7 +98,7 @@
 }
 .recept {
   border: solid 2px #546a7b;
-  border-radius: 40px;
+  border-radius: 20px;
   padding: 40px;
 }
 
@@ -118,9 +118,7 @@
 }
 
 .recept__img {
-  border: 1px solid #070004;
   display: block;
-  border-radius: 5px;
   max-width: 100%;
   margin: 0 auto;
 }
@@ -132,6 +130,15 @@
 .recept__mnozstvi {
   text-decoration: underline;
   margin: 30px 30px 0;
+}
+
+.note::before {
+  content: " ";
+  margin: 20px 0;
+  display: block;
+  width: 100%;
+  height: 4px;
+  background-color: #ffd6eb;
 }
 
 @media screen and (min-width: 550px) {
@@ -213,10 +220,10 @@
 }
 
 .drobecek--size {
-  font-size: 18px;
+  font-size: 16px;
 }
 
-.totallokal--size-small {
+.totallokal--size {
   font-size: 30px;
 }
 
@@ -228,22 +235,39 @@
   font-size: 20px;
 }
 
-.recept__title--size-small,
-.blog__title--size-small {
-  font-size: 34px;
+.recept__title--size,
+.blog__title--size {
+  font-size: 28px;
 }
 
 .uvod__text--size {
-  font-size: 20px;
+  font-size: 18px;
 }
 
 @media screen and (min-width: 550px) {
-  .totallokal--size-big {
+  .uvod__text--size {
+    font-size: 20px;
+  }
+  .menu__item--size {
+    font-size: 18px;
+  }
+  .totallokal--size {
     font-size: 50px;
   }
-  .recept__title--size-big,
-.blog__title--size-big {
+  .recept__title--size,
+.blog__title--size {
     font-size: 34px;
+  }
+  .drobecek--size {
+    font-size: 18px;
+  }
+}
+@media screen and (min-width: 930px) {
+  .text--size {
+    font-size: 18px;
+  }
+  .menu__item--size {
+    font-size: 16px;
   }
 }
 .uvod {

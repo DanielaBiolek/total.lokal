@@ -5,7 +5,7 @@ layout: layouts/hlavni-sablona.njk
 <main class="obsah">
 
             <div class="kontejner">
-                {% for post in collections.recept %}
+                {% for post in collections.recept | reverse %}
 
                     <a class="post__link" href="{{ post.url }}">
                         <div class="post postrecept">
