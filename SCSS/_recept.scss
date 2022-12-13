@@ -4,6 +4,7 @@
     border: solid 2px colors.$border-post;
     border-radius: 20px; 
     padding: 20px;
+    box-shadow: 1px 1px 2px colors.$border-shadow;
 }
 
 .recept__list {
@@ -25,7 +26,7 @@
 .recept__img {
     display: block;
     max-width: 100%;
-    margin: 0 auto;
+    margin: 0 /*auto*/;
 }
 
 .recept__link {

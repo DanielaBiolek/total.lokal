@@ -16,9 +16,11 @@ layout: layouts/hlavni-sablona.njk
                     <div class="postblog__inner-flex">
                         <img class="post__img" src="/images/{{ post.data.foto}}" alt="{{ post.data.alt}}">
                     </div>
-                    <div>
-                        <h2 class="post__title post__title--size">{{ post.data.title }} </h2>
-                        <p class="post__perex post__perex--size"> {{ post.data.perex }} </p>
+                    <div class="postblog__inner-flex">
+                        <div>
+                            <h2 class="post__title post__title--size">{{ post.data.title }} </h2>
+                            <p class="post__perex post__perex--size"> {{ post.data.perex }} </p>
+                        </div>
                     </div>
                  </div>
             </a>

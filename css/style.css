@@ -100,6 +100,7 @@
   border: solid 2px #546a7b;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 1px 1px 2px #ced7de;
 }
 
 .recept__list {
@@ -120,7 +121,7 @@
 .recept__img {
   display: block;
   max-width: 100%;
-  margin: 0 auto;
+  margin: 0;
 }
 
 .recept__link {
@@ -185,8 +186,18 @@
   color: #546a7b;
 }
 
+.blog__img {
+  float: right;
+  margin: 0 0 20px 20px;
+  max-width: 100%;
+}
+
 .postblog {
   margin: 10px;
+}
+
+.post__perex {
+  text-align: justify;
 }
 
 @media screen and (min-width: 550px) {
