@@ -1,15 +1,6 @@
-.text--size {
-    font-size: 16px;
-}
-
-.menu__item--size {
-    font-size: 16px;
-}
-
-.post__perex--size {
-    font-size: 16px;
-}
-
+.text--size,
+.menu__item--size,
+.post__perex--size,
 .drobecek--size {
     font-size: 16px;
 }
@@ -37,13 +28,6 @@
 
 @media screen and (min-width: 550px) {
 
-    .uvod__text--size {
-        font-size: 20px;
-    }
-
-    .menu__item--size {
-        font-size: 18px;
-    }
 
     .totallokal--size {
         font-size: 50px;
@@ -67,6 +51,6 @@
     }
 
     .menu__item--size {
-        font-size: 16px;
+        font-size: 18px;
     }
 }

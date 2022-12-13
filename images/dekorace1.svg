@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="38.593353mm"
-   height="9.8492203mm"
-   viewBox="0 0 38.593353 9.8492203"
+   width="32.317837mm"
+   height="8.2476759mm"
+   viewBox="0 0 32.317837 8.2476759"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.93895903"
-     inkscape:cx="-288.61749"
-     inkscape:cy="140.04871"
+     inkscape:cx="-312.04769"
+     inkscape:cy="141.11372"
      inkscape:window-width="1530"
      inkscape:window-height="836"
      inkscape:window-x="0"
@@ -39,9 +39,10 @@
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-113.88906,-24.782652)">
+     transform="translate(-120.16457,-24.782652)">
     <g
-       id="g3090">
+       id="g3090"
+       transform="matrix(0.83739383,0,0,0.83739383,24.794581,4.0298121)">
       <circle
          style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.499999"
          id="path1877"

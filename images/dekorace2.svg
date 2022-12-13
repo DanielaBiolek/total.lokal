@@ -2,9 +2,9 @@
 <!-- Created with Inkscape (http://www.inkscape.org/) -->
 
 <svg
-   width="38.593353mm"
-   height="9.8492203mm"
-   viewBox="0 0 38.593353 9.8492203"
+   width="32.317837mm"
+   height="8.2476759mm"
+   viewBox="0 0 32.317837 8.2476759"
    version="1.1"
    id="svg5"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01, custom)"
@@ -25,8 +25,8 @@
      inkscape:document-units="mm"
      showgrid="false"
      inkscape:zoom="0.93895903"
-     inkscape:cx="-72.420625"
-     inkscape:cy="137.91869"
+     inkscape:cx="-83.070717"
+     inkscape:cy="134.72366"
      inkscape:window-width="1530"
      inkscape:window-height="836"
      inkscape:window-x="0"
@@ -39,37 +39,34 @@
      inkscape:label="Vrstva 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-113.88906,-24.782652)">
+     transform="translate(-116.56892,-25.97748)">
     <g
-       id="g2224">
+       id="g3090"
+       transform="matrix(-0.83739383,0,0,0.83739383,244.25675,5.2246405)">
       <circle
          style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.499999"
-         id="path1877"
-         cx="-118.81367"
+         id="path1877-36"
+         cx="147.5578"
          cy="29.707262"
-         r="4.9246101"
-         transform="scale(-1,1)" />
+         r="4.9246101" />
       <circle
          style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.369914"
-         id="path1877-3"
-         cx="-131.57904"
+         id="path1877-3-7"
+         cx="134.79242"
          cy="29.707262"
-         r="3.6433749"
-         transform="scale(-1,1)" />
+         r="3.6433749" />
       <circle
          style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.254302"
-         id="path1877-6"
-         cx="-141.92451"
+         id="path1877-6-5"
+         cx="124.44695"
          cy="29.707262"
-         r="2.5046828"
-         transform="scale(-1,1)" />
+         r="2.5046828" />
       <circle
          style="opacity:0.998845;fill:#ffd6eb;fill-opacity:1;stroke:none;stroke-width:0.195742"
-         id="path1877-7"
-         cx="-150.5545"
+         id="path1877-7-3"
+         cx="115.81696"
          cy="29.707262"
-         r="1.9279068"
-         transform="scale(-1,1)" />
+         r="1.9279068" />
     </g>
   </g>
 </svg>

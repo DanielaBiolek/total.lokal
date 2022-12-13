@@ -18,7 +18,7 @@
 .recept__title {
     text-align: center;
     margin: 0;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
     color: colors.$title;
 }
 
@@ -52,6 +52,14 @@
     padding: 0;
 }
 
+.recept__postup--firstline {
+    margin-top: 0;
+}
+
+.recept__postup--lastline {
+    margin-bottom: 0;
+}
+
 .skryto--vmobilu {
      display: none;
 }
@@ -64,6 +72,14 @@
 
     .skryto--vtabletu {
         display: none;
+    }
+
+    .recept {
+        padding: 30px;
+    }
+
+    .recept__title {
+        padding-bottom: 30px;
     }
 
     .recept__grid {
@@ -87,5 +103,16 @@
     .note__list {
         margin: 0;
         padding: 0;
+    }
+}
+
+
+@media screen and (min-width: 930px) {
+    .recept {
+        padding: 40px;
+    }
+
+    .recept__title {
+        padding-bottom: 40px;
     }
 }
