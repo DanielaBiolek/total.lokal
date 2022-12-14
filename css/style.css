@@ -6,6 +6,11 @@
   margin: 0;
 }
 
+@media screen and (min-width: 550px) {
+  .totallokal {
+    padding: 30px;
+  }
+}
 .menu {
   background-color: #290016;
 }
@@ -264,6 +269,23 @@
   color: #79a3a2;
 }
 
+.onas__odstavec1 {
+  font-weight: 600;
+}
+
+.onas__img {
+  max-width: 100%;
+  margin: 20px auto;
+  border: 2px solid #070004;
+}
+
+@media screen and (min-width: 550px) {
+  .onas__img {
+    max-width: 60%;
+    float: right;
+    margin: 0 0 20px 20px;
+  }
+}
 .text--size,
 .menu__item--size,
 .post__perex--size,
@@ -365,6 +387,7 @@
 .post__title {
   margin: 10px 0 0;
   color: #273B3F;
+  line-height: 1.2;
 }
 
 .post__link {
@@ -373,7 +396,7 @@
 
 .post:hover, .post:focus {
   border: 2px solid #79a3a2;
-  box-shadow: 1.5px 1.5px 2.5px #ced7de;
+  box-shadow: 1.5px 1.5px 3px #ced7de;
   transform: translate(-1px, -1px);
 }
 
@@ -465,4 +488,5 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  line-height: 1.5;
 }/*# sourceMappingURL=style.css.map */
