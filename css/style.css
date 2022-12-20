@@ -237,6 +237,14 @@
     margin: 0 0 20px 20px;
     max-width: 60%;
   }
+  .blog__overflowbox {
+    overflow: auto;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .blog__img {
+    max-width: 50%;
+  }
 }
 .postblog {
   margin: 10px;

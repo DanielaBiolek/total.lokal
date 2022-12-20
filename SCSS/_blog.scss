@@ -26,7 +26,15 @@
         max-width: 60%;
     }
 
-    .blog__obsah {
+    .blog__overflowbox {
         overflow: auto;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .blog__img {
+        max-width: 50%;
+    }
+}
+
+
